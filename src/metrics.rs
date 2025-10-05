@@ -19,9 +19,9 @@ use tokio::time::sleep;
 use tokio_util::sync::CancellationToken;
 
 /// How often to run cleanup
-const CLEANUP_INTERVAL_SECS: u64 = 600;
+const CLEANUP_INTERVAL_SECS: u64 = 10;
 /// After how long to remove an entry
-const CLEANUP_ENTRY_TTL_SECS: u64 = 1800;
+const CLEANUP_ENTRY_TTL_SECS: u64 = 60;
 
 #[derive(Clone, Debug, Hash, PartialEq, Eq, EncodeLabelSet)]
 struct RequestLabel {
