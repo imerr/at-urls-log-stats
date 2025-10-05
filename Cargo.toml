@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.145"
-reqwest = { version = "0.12.23", features = ["json", "stream"] }
+reqwest = { version = "0.12.23", default-features = false, features = ["json", "stream"] }
 tokio = { version = "1.47.1", features = ["full"] }
 tokio-util = "0.7.16"
 fern = { version = "0.7.1", features = ["colored"] }
