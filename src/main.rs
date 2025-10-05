@@ -45,7 +45,7 @@ async fn main() {
         .apply()
         .ok();
 
-    let config = match config::Config::load_from_file("config.json") {
+    let config = match Config::load_from_file("config.json") {
         Ok(config) => Arc::new(config),
         Err(e) => {
             error!("Failed to load config: {}", e);
