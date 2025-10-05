@@ -1,0 +1,7 @@
+{
+    "docker_images": [
+        "atdr.meo.ws/archiveteam/urls-grab"
+    ],
+    "docker_socket": "/var/run/docker.sock",
+    "listen_address": "0.0.0.0:8000"
+}
